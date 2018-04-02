@@ -12,7 +12,8 @@ public class FundamentalTheoremOfArithmetics {
 		
 	}
 
-	
+	// basic euclidean algorithm using subtraction  
+	// O (Log min(a,b))
 	private static int calculateGCDUsingEuclideanAlgoBySubtraction( int a , int b ) {
 		
 		if(a==b)
@@ -28,15 +29,17 @@ public class FundamentalTheoremOfArithmetics {
 		
 	}
 	
-	// here a >= b 
-private static int calculateGCDUsingEuclideanAlgoByDivision( int a , int b ) {
-		if(b==0)
-			return a; // remainder is 0 , hence return a 
-		
-		return calculateGCDUsingEuclideanAlgoByDivision(b,a%b);
-		
-		
-		
-	}
+	// here a >= b  
+	// basic euclidean algorithm using division O (Log min(a,b))
+	private static int calculateGCDUsingEuclideanAlgoByDivision( int a , int b ) {
+			if(b==0)
+				return a; // remainder is 0 , hence return a 
+			
+			return calculateGCDUsingEuclideanAlgoByDivision(b,a%b);	
+		}
+	
+	
+	
+	
 
 }
