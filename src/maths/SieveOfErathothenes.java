@@ -8,17 +8,26 @@ public class SieveOfErathothenes {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(SieveOfErastothenes(30));
+		System.out.println(SieveOfErastothenesNloglogn(30));
+		System.out.println(SieveOfErastothenesOn(30));
+	}
+	
+	private static  List<Integer> SieveOfErastothenesOn(int n) {
+		
+		List <Integer> res = new ArrayList();
+		
+		return res;
 	}
 
-	private static List<Integer> SieveOfErastothenes(int  n) {
+	// O (n log (log n) )
+	private static List<Integer> SieveOfErastothenesNloglogn(int  n) {
 		
 		List<Integer> result = new ArrayList<>();
 		boolean isPrime[] =  new boolean[n+1];
 		Arrays.fill(isPrime, true);
 		
 		
-		for(int i = 2 ; i <= n ; ++i)
+		for(int i = 2 ; i <= n ; ++	i)
 		{
 			if(isPrime[i])
 			{

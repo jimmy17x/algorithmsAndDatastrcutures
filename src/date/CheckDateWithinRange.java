@@ -1,6 +1,5 @@
 package date;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -11,7 +10,7 @@ public class CheckDateWithinRange {
 	public static void main(String[] args) {
 		//stem.out.println(isThisDateWithin3MonthsRange("31/01/2018", "dd/MM/yyyy"));
 		
-		System.out.println(isThisDateBefore6monthsOfCurrentDate("5-Oct-2017", "dd-MMM-yyyy"));
+		System.out.println(isThisDateBefore6monthsOfCurrentDate("2017-10-04T10:50:54", "yyyy-MM-dd'T'HH:mm:ss"));
 
 	}
 
